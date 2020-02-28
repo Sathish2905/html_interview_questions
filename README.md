@@ -502,8 +502,6 @@ Cross-Origin Resource Sharing (CORS) is a W3C spec that allows cross-domain comm
     
 * Formatting dates and `currencies` Calendar dates are sometimes presented in different ways. Eg. "May 31, 2020" in the U.S. vs. "31 May 2020" in parts of Europe.
 
-* Do not concatenate translated `strings` Do not do anything like `"The date today is " + _date`. It will break in languages with different word order. Use a template string with parameters substitution for each language instead. For example, look at the following two sentences in English and Chinese respectively: `I will travel on {% date %}` and `{% _date %} 我会出发`. Note that the position of the variable is different due to grammar rules of the language.
-
 * Language reading `direction` In English, we read from left-to-right, top-to-bottom, in traditional Japanese, text is read up-to-down, right-to-left.
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
